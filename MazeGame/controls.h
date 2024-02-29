@@ -8,8 +8,8 @@
 #define RIGHT 'd'
 #define OPENMAP 'm'
 
-// Function declarations related to control handling  <<
-void processInput(char input);
+// Functions that will generate commands for controls
+int processInput(char input);
 
 #endif 
 

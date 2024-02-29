@@ -132,7 +132,7 @@ else
 fi
 
 
-echo -n "Testing for player movement accuracy   - "
+echo -n "Testing for player movement accuracy  - "
 ./MainGame < accurateinput > tmp
 
 if grep -q "Expected output or error message" tmp;

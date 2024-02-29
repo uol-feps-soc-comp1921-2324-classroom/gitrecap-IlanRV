@@ -9,12 +9,12 @@ int main(){
     // initiate map and player postion
 
     while(1) { //loop to start checking for input
-        input = getchar(); //read a single char input
+
+        if(scanf("%c", &input) != 1) break; //read a single char input
         getchar();
 
-        processInput(input);
-        }
+        if (processInput(input) == 1) break;
+    }
 
-
-    return 0 
+    return 0;
 }

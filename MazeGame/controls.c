@@ -2,7 +2,7 @@
 
 // ProcessInput from controls.h for handling player movement
 
-void processInput(char input) { 
+int processInput(char input) { 
     switch(input) {
         case UP:
             // Code logic for up
@@ -21,6 +21,7 @@ void processInput(char input) {
             break;
         default:
             // ignore other keys
-            break;
+            return 0;
     }
+    return 0;
 }
